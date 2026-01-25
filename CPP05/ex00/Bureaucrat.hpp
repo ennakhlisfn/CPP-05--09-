@@ -13,14 +13,19 @@ class Bureaucrat{
         ~Bureaucrat();
 
         class GradeTooHighException : public std::exception{
-            
+            virtual const char* what() const throw();
         };
-        class GradeTooLowException();
+        class GradeTooLowException : public std::exception{
+            virtual const char* what() const throw();
+        };
 
-        const std::string getName();
-        int getGrade();
+        void incrementing();
+        void decrementing();
+
+        const std::string getName() const;
+        int getGrade() const;
 };
 
-
+std::ostream& operator<<(std::ostream& output, const Bureaucrat& obj);
 
 #endif
