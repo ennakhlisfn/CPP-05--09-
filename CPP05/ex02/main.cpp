@@ -1,6 +1,6 @@
 #include <iostream>
-#include <ctime>   // For randomness
-#include <cstdlib> // For srand
+#include <ctime>
+#include <cstdlib>
 
 #include "Bureaucrat.hpp"
 #include "ShrubberyCreationForm.hpp"
