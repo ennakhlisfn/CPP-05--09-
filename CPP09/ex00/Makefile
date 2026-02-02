@@ -1,4 +1,4 @@
-NAME = a.out
+NAME = btc
 SRC= main.cpp BitcoinExchange.cpp
 OBJ=$(SRC:.cpp=.o)
 CCPP = c++ -fsanitize=address -g
